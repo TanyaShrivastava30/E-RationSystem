@@ -1,10 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>E_RationSystem</RootNamespace>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,8 +17,8 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
   </ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\DAL\DAL.csproj" />
-	
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BOL\BOL.csproj" />
+  </ItemGroup>
+
 </Project>

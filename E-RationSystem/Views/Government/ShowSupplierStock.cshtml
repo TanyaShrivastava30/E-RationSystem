@@ -1,0 +1,37 @@
+﻿@using BOL
+@{
+    List<Stock> slist = ViewData["stocks"] as List<Stock>;
+}
+
+<html>
+<body>
+
+    <table class="table caption-top table-bordered table-hover" style="background-color: rgb(191, 150, 191);">
+        @* <table class="table"> *@
+        <caption></caption>
+        <thead>
+            <tr>
+                <th scope="col">Item_Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price(per unit)</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (Stock s in slist)
+            {
+                <tr>
+                    <td>@s.Item_Name</td>
+                    <td>@s.Quantity</td>
+                    <td>@s.Price</td>
+                    
+                </tr>
+
+            }
+
+
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,176 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container" style="background-image: url('/images/Distributorimg.jpg');  background-size: cover;background-repeat: no-repeat;background-position: center;">
+    <div class="row d-flex justify-content-center align-items-center h-100 pb-md-2 pt-md-2">
+        <div class="col-3 text-center">
+            <h1 style="text-shadow: 2px 2px 8px #38ab47;">Distributor</h1>
+        </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center align-items-center h-100 pb-md-2 pt-md-2">
+        @* <div class="col-3 text-center">
+        <label><b style="color: rgb(235, 34, 12);text-shadow: 2px 2px 8px #0cf086;">Stock Details:</b></label>
+        <input type="text" readonly>
+        </div>  *@
+
+
+        <div class="col-2">
+            @* <label style="text-shadow: 2px 2px 8px #f00c3a;">Supplier Details</label>
+            <input type="text"> *@
+            <h6 style="text-shadow: 2px 2px 8px #f00c3a;">Supplier Details</h6>
+            <input type="text" value="501">
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-1">
+            <h6 style="text-shadow: 2px 2px 8px #f00c3a;">Shop Id</h6>
+            <input type="text" value="1">
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-1">
+            <h6 style="text-shadow: 2px 2px 8px #f00c3a;">Name</h6>
+            <input type="text" value="vijay">
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-1">
+            <h6 style="text-shadow: 2px 2px 8px #f00c3a;">Details</h6>
+            <input type="text">
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+            <center>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Links
+                </a>
+            </center><br>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body" style="background-color: rgb(191, 150, 191,0.8);">
+                    <div class=" text-center pb-md-5 pt-md-5">
+                        <div class="form-outline">
+                            <a href="#">Account Details</a><br><br>
+                            <a href="#">Updation Request</a>
+                            <div class="mt-4 pt-2">
+                                <b><a href="/Login/Login">Logout</a></b>
+                                @* <input class="btn btn-success btn-sm" type="submit" value="Logout" /> *@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center h-100 pb-md-2 pt-md-2">
+        <div class="col-9">
+            <table class="table caption-top table-bordered table-hover" style="background-color: rgb(191, 150, 191,0.8);">
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Sr No.</th>
+                        <th scope="col">Ration Id</th>
+                        <th scope="col">Time Allocation</th>
+                        <th scope="col">Delivered/Not-Delivered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>20221211</td>
+                        <td>15-3-2023 10:00 am - 12:00pm</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>20230112</td>
+                        <td>15-3-2023 10:00 am - 12:00pm</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>20230301</td>
+                        <td>15-3-2023 12:00 noon - 2:00pm</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>20221209</td>
+                        <td>15-3-2023 10:00 am - 12:00pm</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>20230122</td>
+                        <td>15-3-2023 10:00 am - 12:00pm</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>20230401</td>
+                        <td>15-3-2023 12:00 noon - 2:00pm</td>
+                        <td>Pending</td>
+                    </tr>
+                    <br />
+                    <br />
+                    <br />
+                    @*<tr>
+                        <th scope="row">4</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>*@
+                </tbody>
+            </table>
+        </div>
+        <div class="col-3 text-center">
+            <label><b style="color: rgb(235, 34, 12);text-shadow: 2px 2px 8px #0cf086;">Total amount</b></label>
+            <input type="text" readonly>
+        </div>
+    </div>
+</div>

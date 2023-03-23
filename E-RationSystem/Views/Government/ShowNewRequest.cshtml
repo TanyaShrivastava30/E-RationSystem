@@ -1,0 +1,28 @@
+﻿@*@using BOL
+@{
+   Consumer c = ViewData["newrequest"] as Consumer;
+}*@
+
+<html>
+<body>
+
+    <table class="table caption-top table-bordered table-hover" style="background-color: rgb(191, 150, 191);">
+        @* <table class="table"> *@
+        <caption></caption>
+       
+        <tbody>
+            
+            <tr><td>Name: </td><td>@ViewData["name"]</td>
+            <tr><td>Mobile Number: </td><td>@ViewData["mob"]</td>
+            <tr><td>Aadhar Number: </td><td>@ViewData["adhar"]</td>
+            <tr><td>Gender: </td><td>@ViewData["gender"]</td>
+            <tr><td>DOB: </td><td>@ViewData["dob"]</td>
+            <tr><td>Income: </td><td>@ViewData["income"]</td>
+            <tr><td>Total Members: </td><td>@ViewData["member"]</td>
+            <tr><td>Address: </td><td>@ViewData["address"]</td>
+            <tr><td>Pincode: </td><td>@ViewData["pin"]</td>
+         
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿@using BOL
+@{
+    Supplier s = ViewData["profile"] as Supplier;
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/profile.css" />
+
+</head>
+<body>
+    @*<script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = alert("profile updated successfully");
+        }
+    </script>*@
+
+    <div class="container-xl px-4 mt-4">
+
+
+        <hr class="mt-0 mb-4">
+        <div class="row">
+
+            <div class="col-xl-8">
+                <!-- Account details card-->
+                <div class="card mb-4">
+                    <div class="card-header">Account Updation</div>
+                    <div class="card-body ">
+                        <form>
+                            <!-- Form Group (username)-->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputFirstName">Name</label>
+                                <input class="form-control" id="Name" type="text" name="Supplier_Name" placeholder="Enter your name" readonly value="@s.Supplier_Name">
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="supplierid">Supplier Id</label>
+                                    <input class="form-control" id="supplierid" type="text" name="Supplier_Id" placeholder="supplier id" readonly value="@s.Supplier_Id">
+                                </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="birthdate">Date of Birth</label>
+                                    <input class="form-control" id="birthdate" type="text" name="Date_of_Birth" placeholder="date of birth" readonly value="@s.Date_Of_Birth">
+                                </div>
+                            </div>
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="adharnumber">Adhar Number</label>
+                                    <input class="form-control" id="adharnumber" type="text" name="Adhar_No" placeholder="adhar number" readonly value="@s.Adhar_No">
+                                </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="mobilenumber">Mobile Number</label>
+                                    <input class="form-control" id="mobilenumber" type="text" name="Mobile_No" placeholder="mobile number" value="@s.Mobile_No">
+                                </div>
+                            </div>
+                            <!-- Form Row        -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (organization name)-->
+                                <!-- Form Group (location)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="password">Password</label>
+                                    <input class="form-control" id="password" type="password" name="Password" placeholder="password" value="@s.Password">
+                                </div>
+                            </div>
+
+                            <!-- Save changes button-->
+                            <button class="btn btn-primary align-item-center" @*onclick="myFunction()"*@ type="button">Save changes</button>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</body>

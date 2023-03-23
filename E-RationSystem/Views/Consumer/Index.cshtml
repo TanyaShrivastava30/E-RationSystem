@@ -1,0 +1,137 @@
+﻿@*@using BOL;
+@{
+    List<Card_Stock> list = ViewData["clist"] as List<Card_Stock>;
+}*@
+
+<form>
+    @* <div class="text-center" style="background-image:url(/images/tiranga3.jpg) "; >
+    <h1 style="color:rgb(144, 28, 197)">Card Holder</h1>
+    <div class="container" style="background-image: url('/images/rationcard.jpg') ;background-size: cover;background-repeat: no-repeat;background-position: center;">
+    *@
+
+    <div class="row d-flex justify-content-center align-items-center00 pb-md-2 pt-md-2" style="background-image:url(/images/rationcard.jpg); background-size: cover;background-repeat: no-repeat;background-position: center; ">
+        <div class="col-12 text-center"><br/>
+            <b> <h1 style="color:White">Card Holder UI</h1></b>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center h-100 pb-md-2 pt-md-2">
+            <div class="col-3 text-center">
+                @* <h2 style="text-shadow: 2px 2px 8px #e60a0a;">Card Holder UI</h2> *@
+            </div>
+        </div>
+
+
+        <div class="row d-flex justify-content-center align-items-center h-100 pb-md-2 pt-md-2">
+            <div class="col-2 text-center">
+                <label><h5 style="color: rgb(159, 6, 206);text-shadow: 2px 2px 8px #f00cf0;">Time Slot: </h5></label>
+                <input type="text" value="2023-03-15 11:00 am to 12:00 noon" readonly>
+            </div>
+
+            <div class="col-6">
+            </div>
+            <div class="col-3">
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Links
+                    </a>
+                </p>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="background-color: rgb(247, 198, 214);">
+                        <div class="col-12 text-center pb-md-4 pt-md-4" style="background-color: rgb(247, 198, 214);">
+                            <div class="form-outline">
+                                <a href="/Consumer/ShowProfile"><h6>Account Details</h6></a>
+                                <a href="/Consumer/Profile_updation"><h6>Updation Request</h6></a>
+                                @*<a href="#"><h6>Complains</h6></a>*@
+                                <a href="/Consumer/Consumer_Login"><h6>Logout</h6></a>
+                                <div class="mt-4 pt-2">
+                                  @*  <input class="btn btn-success btn-sm" type="submit" value="Logout" />*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row d-flex justify-content-center align-items-center h-100 pb-md-2 pt-md-2">
+            <div class="col-9">
+                <table class="table caption-top table-bordered table-hover" style="background-color: rgb(247, 198, 214,0.8)">
+                    <caption></caption>
+                    <thead>
+                        <tr>
+                            @*<th scope="col">Item_Id</th>*@
+                            <th scope="col">Item_Name</th>
+                            <th scope="col">Quantity </th>
+                            <th scope="col">Price_per_Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                          <tr>
+                            @*<th scope="row">1</th>*@
+                            <td><b>Wheat</b></td>
+                            <td><b>20</b></td>
+                            <td><b>2.00</b></td>
+                          </tr>
+
+                          <tr>
+                            @*<th scope="row">1</th>*@
+                            <td><b>Rice</b></td>
+                            <td><b>15</b></td>
+                            <td><b>3.00</b></td>
+                          </tr>
+                          <tr>
+                            @*<th scope="row">1</th>*@
+                            <td><b>Sugar</b></td>
+                            <td><b>2</b></td>
+                            <td><b>13.50</b></td>
+                          </tr>
+                           <tr>
+                            @*<th scope="row">1</th>*@
+                            <td><b>Toor Daal</b></td>
+                            <td><b>1</b></td>
+                            <td><b>20.00</b></td>
+                          </tr>
+
+                          <tr>
+                            @*<th scope="row">1</th>*@
+                            <td><b>Urid Daal</b></td>
+                            <td><b>1</b></td>
+                            <td><b>20.00</b></td>
+                          </tr>
+
+                        <tr>
+                            @*<th scope="row">1</th>*@
+                            <td><b>Kerosene</b></td>
+                            <td><b>1</b></td>
+                            <td><b>13.60</b></td>
+                        </tr>
+
+                        <tr>
+                            @*<th scope="row">1</th>*@
+                            <td><b>Fortified Palmolein Oil</b></td>
+                            <td><b>1</b></td>
+                            <td><b>25.00</b></td>
+                        </tr>
+                          
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-3"></div>
+
+            <div class="col-8 align-item-left">
+                <label><h2 style="color:  rgb(241, 33, 33);text-shadow: 2px 2px 8px #0cf086;">Total amount:</h2></label>
+                <input type="text" value="177.10" readonly>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</form>
+

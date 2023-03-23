@@ -1,0 +1,36 @@
+﻿@using BOL
+@{
+    List<Supplier> slist = ViewData["supplier"] as List<Supplier>;
+}
+<html>
+    <body>
+
+<table class="table caption-top table-bordered table-hover" style="background-color: rgb(191, 150, 191);">
+    @* <table class="table"> *@
+    <caption></caption>
+    <thead>
+        <tr>
+            <th scope="col">Supplier_Id</th>
+            <th scope="col">Supplier_Name</th>
+            <th scope="col">Mobile_No</th>
+            <th scope="col">Aadhar_No</th>
+            <th scope="col">Date_of_Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Supplier s in slist)
+        {
+            <tr>
+                <td>@s.Supplier_Id</td>
+                <td>@s.Supplier_Name</td>
+                <td>@s.Mobile_No</td>
+                <td>@s.Adhar_No</td>
+                <td>@s.Date_Of_Birth</td>
+                
+            </tr>
+
+        }
+    </tbody>
+</table>
+</body>
+</html>

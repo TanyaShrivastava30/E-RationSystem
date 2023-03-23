@@ -1,0 +1,51 @@
+﻿@using BOL
+@{
+    Consumer c = ViewData["profile"] as Consumer;
+}
+
+<html>
+<body>
+
+    <table class="table caption-top table-bordered table-hover" style="background-color: rgb(191, 150, 191);">
+        @* <table class="table"> *@
+        <caption></caption>
+        <thead>
+            <tr>
+                <th scope="col">Ration_Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mobile_No</th>
+                <th scope="col">Aadhar_No</th>
+                <th scope="col">Card_Type</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Date_of_Birth</th>
+                <th scope="col">Income</th>
+                <th scope="col">Total_Members</th>
+                <th scope="col">Password</th>
+                <th scope="col">Address</th>
+                <th scope="col">PinCode</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>@c.Ration_Id</td>
+                    <td>@c.Name</td>
+                    <td>@c.Mobile_No</td>
+                    <td>@c.Adhar_No</td>
+                    <td>@c.Card_Type</td>
+                    <td>@c.Gender</td>
+                    <td>@c.Date_of_Birth</td>
+                    <td>@c.Income</td>
+                    <td>@c.Total_Members</td>
+                    <td>@c.Password</td>
+                    <td>@c.Address</td>
+                    <td>@c.Pincode</td>
+                </tr>
+
+         
+        </tbody>
+    </table>
+
+
+</body>
+</html>
